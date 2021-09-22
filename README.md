@@ -3,6 +3,10 @@
 ![Python](https://img.shields.io/badge/Python-3.8-blueviolet)
 ![API](https://img.shields.io/badge/API-TMDB-fcba03)
 
+Content Based Recommender System recommends movies similar to the movie user likes and analyses the sentiments on the reviews given by the user for that movie. 
+
+The data for the project was extracted from IMDB dataset from Kaggle, Wikipedia portals and TMDB API employing csv extraction, **web scraping** and **beautifulsoup4**. The sentiments of the reviews of the movies were analyzed using **TF-IDF vectorizer** and **Naïve Bayes classifier** for which the accuracy of the model was optimized for **98.7%**. The feature extraction was done with **CountVectorizer** and after which the similarity is calculated using **Cosine Similarity**.
+
 This application provides all the details of the requested movie such as overview, genre, release date, rating, runtime, top cast, reviews, recommended movies, etc.
 
 The details of the movies(title, genre, runtime, rating, poster, etc) are fetched using an API by TMDB, https://www.themoviedb.org/documentation/api, and using the IMDB id of the movie in the API, I did web scraping to get the reviews given by the user in the IMDB site using `beautifulsoup4` and performed sentiment analysis on those reviews.
